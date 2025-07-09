@@ -1,0 +1,62 @@
+{
+  "name": "wecombot-mcp",
+  "version": "1.0.0",
+  "description": "A Model Context Protocol (MCP) server for WeChat Work (企业微信) group bot integration",
+  "main": "dist/index.js",
+  "type": "module",
+  "bin": {
+    "wecombot-mcp": "dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "tsx src/index.ts",
+    "test": "node --test dist/test/*.js",
+    "test:dev": "tsx --test src/test/*.test.ts",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "wechat",
+    "wecom",
+    "enterprise-wechat",
+    "bot",
+    "webhook",
+    "claude",
+    "typescript"
+  ],
+  "author": {
+    "name": "WeComBot MCP Team",
+    "email": "contact@example.com"
+  },
+  "license": "MIT",
+  "homepage": "https://github.com/yourusername/wecombot-mcp#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yourusername/wecombot-mcp.git"
+  },
+  "bugs": {
+    "url": "https://github.com/yourusername/wecombot-mcp/issues"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "files": [
+    "dist/",
+    "README.md",
+    "README_CN.md",
+    "LICENSE",
+    "CHANGELOG.md"
+  ],
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.0",
+    "axios": "^1.6.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "tsx": "^4.0.0",
+    "typescript": "^5.0.0",
+    "nock": "^13.5.0"
+  }
+}
