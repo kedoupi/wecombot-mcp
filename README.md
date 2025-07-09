@@ -31,8 +31,18 @@ A Model Context Protocol (MCP) server for WeChat Work (企业微信) group bot i
 ### Installation
 
 ```bash
-# Clone the repository
-git clone https://github.com/yourusername/wecombot-mcp.git
+# Install globally via npm
+npm install -g @kedoupi/wecombot-mcp
+
+# Or use directly with npx (recommended)
+npx @kedoupi/wecombot-mcp
+```
+
+#### Development Installation
+
+```bash
+# Clone the repository for development
+git clone https://github.com/kedoupi/wecombot-mcp.git
 cd wecombot-mcp
 
 # Install dependencies

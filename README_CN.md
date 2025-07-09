@@ -31,8 +31,18 @@
 ### 安装
 
 ```bash
-# 克隆仓库
-git clone https://github.com/yourusername/wecombot-mcp.git
+# 通过 npm 全局安装
+npm install -g @kedoupi/wecombot-mcp
+
+# 或直接使用 npx（推荐）
+npx @kedoupi/wecombot-mcp
+```
+
+#### 开发安装
+
+```bash
+# 克隆仓库进行开发
+git clone https://github.com/kedoupi/wecombot-mcp.git
 cd wecombot-mcp
 
 # 安装依赖

@@ -1,5 +1,5 @@
 {
-  "name": "wecombot-mcp",
+  "name": "@kedoupi/wecombot-mcp",
   "version": "1.0.0",
   "description": "A Model Context Protocol (MCP) server for WeChat Work (企业微信) group bot integration",
   "main": "dist/index.js",
@@ -31,19 +31,30 @@
     "email": "contact@example.com"
   },
   "license": "MIT",
-  "homepage": "https://github.com/yourusername/wecombot-mcp#readme",
+  "homepage": "https://github.com/kedoupi/wecombot-mcp#readme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/yourusername/wecombot-mcp.git"
+    "url": "git+https://github.com/kedoupi/wecombot-mcp.git"
   },
   "bugs": {
-    "url": "https://github.com/yourusername/wecombot-mcp/issues"
+    "url": "https://github.com/kedoupi/wecombot-mcp/issues"
   },
   "engines": {
     "node": ">=18.0.0"
   },
   "files": [
-    "dist/",
+    "dist/index.js",
+    "dist/index.d.ts",
+    "dist/index.js.map",
+    "dist/index.d.ts.map",
+    "dist/types.js",
+    "dist/types.d.ts",
+    "dist/types.js.map",
+    "dist/types.d.ts.map",
+    "dist/wecom-client.js",
+    "dist/wecom-client.d.ts",
+    "dist/wecom-client.js.map",
+    "dist/wecom-client.d.ts.map",
     "README.md",
     "README_CN.md",
     "LICENSE",
