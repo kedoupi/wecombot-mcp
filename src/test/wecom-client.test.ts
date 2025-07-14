@@ -159,7 +159,7 @@ describe('WeComClient', () => {
       });
 
       assert.strictEqual(result.success, false);
-      assert.ok(result.message?.includes('Network error'));
+      assert.ok(result.message?.includes('HTTP error'));
       assert.strictEqual(scope.isDone(), true);
     });
 

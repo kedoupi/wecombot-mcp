@@ -1,11 +1,11 @@
 {
   "name": "@kedoupi/wecombot-mcp",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A Model Context Protocol (MCP) server for WeChat Work (企业微信) group bot integration",
   "main": "dist/index.js",
   "type": "module",
   "bin": {
-    "wecombot-mcp": "dist/index.js"
+    "wecombot-mcp": "bin/wecombot-mcp.js"
   },
   "scripts": {
     "build": "tsc",
@@ -13,6 +13,7 @@
     "dev": "tsx src/index.ts",
     "test": "node --test dist/test/*.js",
     "test:dev": "tsx --test src/test/*.test.ts",
+    "test:integration": "tsx --test src/test/integration.test.ts",
     "prepublishOnly": "npm run build"
   },
   "keywords": [
@@ -43,18 +44,8 @@
     "node": ">=18.0.0"
   },
   "files": [
-    "dist/index.js",
-    "dist/index.d.ts",
-    "dist/index.js.map",
-    "dist/index.d.ts.map",
-    "dist/types.js",
-    "dist/types.d.ts",
-    "dist/types.js.map",
-    "dist/types.d.ts.map",
-    "dist/wecom-client.js",
-    "dist/wecom-client.d.ts",
-    "dist/wecom-client.js.map",
-    "dist/wecom-client.d.ts.map",
+    "dist/",
+    "bin/",
     "README.md",
     "README_CN.md",
     "LICENSE",
